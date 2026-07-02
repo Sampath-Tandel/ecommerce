@@ -1,0 +1,5 @@
+1. npm install bcryptjs jsonwebtoken validator
+
+bcryptjs: To encrypts password
+jsonwebtoken: Creates Login Token
+validator: validators

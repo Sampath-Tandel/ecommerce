@@ -1,0 +1,62 @@
+/*
+=========================================================
+Middleware
+=========================================================
+
+Definition:
+------------
+Middleware is a function that executes between the client's
+request and the route controller.
+
+Purpose:
+--------
+- Validate requests
+- Authenticate users
+- Authorize users
+- Log requests
+- Handle errors
+- Modify request/response objects
+
+Flow:
+-----
+
+Client
+   │
+   ▼
+Middleware
+   │
+   ▼
+Controller
+   │
+   ▼
+Response
+
+Common Types:
+-------------
+1. Authentication Middleware
+2. Authorization Middleware
+3. Error Handling Middleware
+4. Logging Middleware
+5. Validation Middleware
+
+Example:
+--------
+
+GET /profile
+
+↓
+
+Authentication Middleware
+
+↓
+
+If token is valid
+        ↓
+Controller
+
+Else
+        ↓
+401 Unauthorized
+
+=========================================================
+*/
